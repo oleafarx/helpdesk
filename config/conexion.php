@@ -19,7 +19,7 @@
         }
 
         //Para no estar escribiendo siempre la ruta, se coloca en una propiedad
-        public function ruta(){
+        public static function ruta(){
             return "http://localhost:8080/helpdesk/";
         }
     }

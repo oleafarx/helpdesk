@@ -38,7 +38,12 @@
                         <img src="public/img/avatar-sign.png" alt="">
                     </div>
                     <header class="sign-title">Acceso</header>
-
+                    <div class="form-group">
+                        <input id="us_correo" name="us_correo" type="email" class="form-control" placeholder="Correo"/>
+                    </div>
+                    <div class="form-group">
+                        <input id="us_pass" name="us_pass" type="password" class="form-control" placeholder="Contraseña"/>
+                    </div>
                     <?php
                         if (isset($_GET["m"])) {
                             switch($_GET["m"]) {
@@ -49,7 +54,7 @@
                                             <span aria-hidden="true">×</span>
                                         </button>
                                         <i class="font-icon font-icon-warning"></i>
-                                        El Usuario y/o Contraseña son incorrectos
+                                        El usuario y/o contraseña son incorrectos
                                     </div>
                                     <?php
                                 break;
@@ -69,12 +74,6 @@
                         }
                     ?>
 
-                    <div class="form-group">
-                        <input id="us_correo" name="us_correo" type="email" class="form-control" placeholder="Correo"/>
-                    </div>
-                    <div class="form-group">
-                        <input id="us_pass" name="us_pass" type="password" class="form-control" placeholder="Contraseña"/>
-                    </div>
                     <div class="form-group">
                         <div class="float-right reset">
                             <a href="reset-password.html">Cambiar Contraseña</a>
