@@ -10,3 +10,5 @@
 <link rel="stylesheet" href="../../public/css/lib/font-awesome/font-awesome.min.css">
 <link rel="stylesheet" href="../../public/css/lib/bootstrap/bootstrap.min.css">
 <link rel="stylesheet" href="../../public/css/main.css">
+<link rel="stylesheet" href="../../public/css/lib/summernote/summernote.css"/>
+<link rel="stylesheet" href="../../public/css/separate/pages/editor.min.css">
