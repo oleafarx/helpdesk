@@ -44,31 +44,36 @@ if (isset($_SESSION["us_id"])) {
 					<h5 class="m-t-lg with-border">Ingresar información.</h5>
 
 					<div class="row">
-						<div class="col-lg-6">
-							<fieldset class="form-group">
-								<label class="form-label semibold" for="exampleInput">Categoría</label>
-								<select id="ca_id" class="form-control">
-									
-								</select>
-							</fieldset>
-						</div>
-						<div class="col-lg-6">
-							<fieldset class="form-group">
-								<label class="form-labe semibold" for="exampleInputEmail1">Título</label>
-								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ingrese título">
-							</fieldset>
-						</div>
-						<div class="col-lg-12">
-							<fieldset class="form-group">
-								<label class="form-label semibold" for="exampleInputPassword1">Descripción</label>
-								<div class="summernote-theme-10">
-									<textarea class="ticketDescription" name="name"></textarea>
-								</div>
-							</fieldset>
-						</div>
-						<div class="col-lg-12" style="display: flex; justify-content: end;">
-							<button type="button" class="btn btn-rounded btn-inline btn-primary">Guardar</button>
-						</div>
+						<form action="" id="ticketForm">
+
+							<input type="hidden" id="ti_usuario" name="ti_usuario" value="<?php echo $_SESSION["us_id"] ?>">
+
+							<div class="col-lg-6">
+								<fieldset class="form-group">
+									<label class="form-label semibold" for="exampleInput">Categoría</label>
+									<select id="ca_id" name="ca_id" class="form-control">
+
+									</select>
+								</fieldset>
+							</div>
+							<div class="col-lg-6">
+								<fieldset class="form-group">
+									<label class="form-labe semibold" for="ti_titulo">Título</label>
+									<input type="text" class="form-control" id="ti_titulo" name="ti_titulo" placeholder="Ingrese título">
+								</fieldset>
+							</div>
+							<div class="col-lg-12">
+								<fieldset class="form-group">
+									<label class="form-label semibold" for="ti_descripcion">Descripción</label>
+									<div class="summernote-theme-10">
+										<textarea class="ticketDescription" id="ti_descripcion" name="ti_descripcion"></textarea>
+									</div>
+								</fieldset>
+							</div>
+							<div class="col-lg-12" style="display: flex; justify-content: end;">
+								<button type="submit" name="action" value="add" class="btn btn-rounded btn-inline btn-primary">Guardar</button>
+							</div>
+						</form>
 					</div><!--.row-->
 				</div>
 
